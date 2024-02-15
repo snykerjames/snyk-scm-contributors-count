@@ -7,6 +7,7 @@ var node_ver: number = +node_ver_str;
 
 if (node_ver < 14) {
 	console.log("Detected Node.js v" + node_ver + " -  v14 or later is required.");
+	console.log("Unable to continue. Exiting.")
 	process.exit(1);
 }
 
