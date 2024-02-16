@@ -2,6 +2,7 @@
 
 import * as yargs from 'yargs';
 
+// Preflight checks
 var node_ver_str = process.versions.node.split('.')[0];
 var node_ver: number = +node_ver_str;
 
@@ -10,6 +11,7 @@ if (node_ver < 14) {
 	console.log("Unable to continue. Exiting.")
 	process.exit(1);
 }
+//
 
 yargs
   .commandDir('cmds')
